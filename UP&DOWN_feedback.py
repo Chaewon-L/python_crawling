@@ -48,6 +48,7 @@ while True:
                     print("최고기록 갱신~!")
                     top = turn
                     score.append(turn) # 기록을 기록 리스트에 추가
+                    break
                 else:
                     break
 
