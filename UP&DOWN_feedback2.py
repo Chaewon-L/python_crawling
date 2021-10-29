@@ -6,6 +6,7 @@ Choice = 0 # 메뉴 선택지 변수
 
 # 기록파일 읽어오기
 # 피드백) 사용자에게 파일이 아예 존재하지 않는 경우를 처리하는 과정
+# 'a+'= 읽기 또는 추가 (파일 없으면 생성, 파일 있으면 끝에 추가)
 f = open("C:/Users/yp122/PycharmProjects/SWING2-2/record_file.txt", 'a+')
 test = f.readlines()
 
