@@ -67,7 +67,7 @@ while True:
                     top = turn
                     nickname = input("닉네임을 입력헤주세요:")
                     record = "%d %s %s\n" % (turn, nickname, datetime.today().strftime("%Y.%m.%d")) # 파일에 인덱스, 닉네임, 날짜 기록
-                    f = open("C:/Users/yp122/PycharmProjects/SWING2-2/record_file.txt", 'a')
+                    f = open("record_file.txt", 'a')
                     f.write(record) # txt파일에 저장
                     f.close()
                     break
@@ -77,7 +77,7 @@ while True:
 
 
     elif Choice == 2: # 기록확인
-        f = open("C:/Users/yp122/PycharmProjects/SWING2-2/record_file.txt", 'r')
+        f = open("record_file.txt", 'r')
         r = f.readlines() # 파일에서 기록 읽어오기
         ranking = 1 # 순위 변수
         for s in r: # 기록 출력
