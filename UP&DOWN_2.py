@@ -4,7 +4,7 @@ from datetime import datetime
 Choice = 0 # 메뉴 선택지 변수
 
 # 기록파일 읽어오기
-f = open("C:/Users/yp122/PycharmProjects/SWING2-2/record_file.txt", 'r')
+f = open("record_file.txt", 'r')
 test = f.readlines()
 
 if not test:    # 과거 기록이 없는 경우
