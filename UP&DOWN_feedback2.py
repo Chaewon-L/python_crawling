@@ -5,10 +5,13 @@ import os.path
 Choice = 0 # 메뉴 선택지 변수
 
 # 기록파일 읽어오기
-# 피드백) 사용자에게 파일이 아예 존재하지 않는 경우를 처리하는 과정
-# 'a+'= 읽기 또는 추가 (파일 없으면 생성, 파일 있으면 끝에 추가)
-f = open("C:/Users/yp122/PycharmProjects/SWING2-2/record_file.txt", 'a+')
+f = open("record_file.txt", 'r')
 test = f.readlines()
+
+# 피드백) 사용자에게 파일이 아예 존재하지 않는 경우를 처리하는 과정
+if not os.path.isfile("record_file.txt"):
+    f = open("record_file.txt", 'w')
+    f.close()
 
 if not test:    # 과거 기록이 없는 경우
     top = 11      # 최고기록 11로 지정, 첫번째 시도자의 점수는 무조건 최고점수
